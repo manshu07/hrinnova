@@ -1,0 +1,109 @@
+.login-wrapper{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ background: #fff;
+ justify-content: space-between;
+ align-items: center;
+ height: 100vh;
+ width: 100%;
+}
+
+.login-logo{
+ cursor: pointer;
+ padding: 10px;
+ text-align: left;
+}
+.login-logo img{
+ max-height:50px; 
+}
+
+.login-panel{
+ width: 40%;
+ height: inherit;
+ padding: 40px 30px;
+ background: #fff;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.login-form{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+.login-form input[type='text'],
+.login-form input[type='password']{
+width: 100%;
+float: left;
+border: 1px solid #d5d5e3;
+border-radius: 5px;
+height: 48px;
+padding: 10px 20px;
+line-height: 30px;
+color: #343747;
+font-size: 16px;
+display: block;
+}
+
+.login-form button[type='submit']{
+ background: #27d086;
+ border: none;
+ color: #fff;
+ text-align: center;
+ border-radius: 5px;
+ font-size: 16px;
+ padding: 15px 50px;
+ display: block;
+ cursor: pointer;
+}
+
+.login-form button[type='submit']:hover{background: #364fcc}
+
+.mb-15{
+ width: 100%;
+ float: left;
+ display: block;
+ margin-bottom: 15px;
+}
+.login-inner{
+ align-items: flex-start;
+ justify-content: center;
+ display: flex;
+ flex-direction: column;
+ margin: 0 auto;
+ max-width: 400px;
+}
+
+.login-inner h2{
+ font-size: 25px;
+ font-weight: 900;
+ color: #343747;
+ margin: 50px 0
+}
+
+
+.thoughts-panel{
+ background: #364fcc url(../../assets/images/login-bg.png) no-repeat 40% 50%;
+ width: 60%;
+ padding: 50px;
+ height: inherit;
+ text-align: center;
+ display: flex;
+ align-items: center;
+}
+.thoughts-wrapper{
+ margin: 0 auto;
+ max-width: 600px;
+}
+.thoughts-wrapper h1{
+ font-size: 80px;
+ text-align: left;
+ color: #fff;
+letter-spacing: -1px
+}
+
+
+.forget-pass{font-size: 16px;text-decoration: underline;color: #8e8ea8;display: block;margin: 15px 0 30px 0;float: left;width: 100%;}

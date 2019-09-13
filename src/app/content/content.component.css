@@ -1,0 +1,9 @@
+#content-area{
+  margin-left: 260px;
+  height: 100%;
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+}
+#content-area .content-wrapper {
+    min-height: calc(100vh - 3.5rem);
+}

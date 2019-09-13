@@ -1,0 +1,94 @@
+<div class="sidebar-panel">
+ <div class="sidebar-items-list">
+  <div class="logo"><a href="#"><img src="../../assets/images/dashboard-logo.png" alt="logo"></a></div>
+
+  <section class="menu-sidebar">
+   
+   <div class="sidebar-items" (click)="toggle()" 
+    [ngClass]="show ? 'success' : 'danger'">
+    <a href="javascript:void(0);" target="_self">
+    <span class="sibar-item-name">
+     <span class="lnr lnr-user"></span>
+     <span class="truncate">Employee</span>
+    </span>
+    <span class=" lnr lnr-chevron-right sub_arrow"></span></a>
+    <ul *ngIf="sidebar_menu" class="sidebar-submenu">
+     <li><div class="sidebar-items"><a href="#">My profile</a></div></li>
+     <li>
+       <div class="sidebar-items"><a href="#">Skill Matrix</a></div>
+     </li>
+     <li>
+       <div class="sidebar-items"><a href="#">Expense Request</a></div>
+     </li>
+     <li>
+       <div class="sidebar-items"><a href="#">My Appraisal</a></div>
+     </li>
+    </ul>
+   </div>
+   
+   <div class="sidebar-items" (click)="toggle()" [ngClass]="show ? 'success' : 'danger'">
+    <a href="javascript:void(0);" target="_self">
+      <span class="sibar-item-name">
+       <span class="lnr lnr-briefcase"></span>
+       <span class="truncate">Training</span>
+      </span>
+      <span class=" lnr lnr-chevron-right sub_arrow"></span></a>
+
+    <ul *ngIf="sidebar_menu" class="sidebar-submenu">
+      <li>
+        <div class="sidebar-items"><a href="#">Event Calender</a></div>
+      </li>
+      <li>
+        <div class="sidebar-items"><a href="#">Training Imparted</a></div>
+      </li>
+    </ul>
+   </div>
+   
+   <div class="sidebar-items" (click)="toggle()" [ngClass]="show ? 'success' : 'danger'">
+    <a href="javascript:void(0);" target="_self">
+     <span class="sibar-item-name">
+      <span class="lnr lnr-hand"></span><span class="truncate">Attendance</span>
+     </span>
+     <span class=" lnr lnr-chevron-right sub_arrow"></span>
+    </a>
+
+     <ul *ngIf="sidebar_menu" class="sidebar-submenu">
+       <li>
+         <div class="sidebar-items"><a href="#">My Attendance</a></div>
+       </li>
+       <li>
+         <div class="sidebar-items"><a href="#">My Request</a></div>
+       </li>
+     </ul>
+   </div>
+   
+   <div class="sidebar-items" (click)="toggle()" [ngClass]="show ? 'success' : 'danger'">
+    <a href="javascript:void(0);" target="_self">
+      <span class="sibar-item-name">
+       <span class="lnr lnr-book"></span><span class="truncate">Project Managment</span>
+      </span>
+      <span class=" lnr lnr-chevron-right sub_arrow"></span>
+    </a>
+    <ul *ngIf="sidebar_menu" class="sidebar-submenu">
+      <li>
+        <div class="sidebar-items"><a href="#">Project Summary</a></div>
+      </li>
+      <li>
+        <div class="sidebar-items"><a href="#">View Board</a></div>
+      </li>
+      <li>
+        <div class="sidebar-items"><a href="#">Resource Requisition</a></div>
+      </li>
+      <li>
+        <div class="sidebar-items"><a href="#">Resource Requisition List</a></div>
+      </li>
+    </ul>
+   </div>
+   
+   <div class="sidebar-items"><a href="#" target="_self"><span class="lnr lnr-calendar-full"></span><span class="truncate">Timesheet</span></a></div>
+   <div class="sidebar-items"><a href="#" target="_self"><span class="lnr lnr-chart-bars"></span><span class="truncate">Report</span></a></div>
+   <div class="sidebar-items"><a href="#" target="_self"><span class="lnr lnr-bullhorn"></span><span class="truncate">Onboarding</span></a></div>
+   <div class="sidebar-items"><a routerLink="/login" routerLinkActive="active" target="_self"><span class="lnr lnr-lock"></span><span class="truncate">Login Page</span></a></div>
+  </section>
+ </div>
+</div>

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+ font-family: 'Roboto', sans-serif;
+ color: #000;
+ font-size: 16px;
+ background: #f8f8f8;
+ overflow-x: hidden;
+ max-width: 100%;
+}
+a,a:hover,a:focus{
+ text-decoration: none;
+ -webkit-transition: all 0.2s linear;
+-moz-transition: all 0.2s linear;
+-ms-transition: all 0.2s linear;
+-o-transition: all 0.2s linear;
+transition: all 0.2s linear;
+}
+.main-wrap{
+ width: 100%;
+ position: relative;
+}
