@@ -19,3 +19,11 @@ transition: all 0.2s linear;
  width: 100%;
  position: relative;
 }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-padding{
+    padding: 0 !important;
+}

@@ -1,3 +1,8 @@
 http://drift.g-axon.work/html-bs4/default/
 http://drift.g-axon.work/html-bs4/crm/
 https://mannatthemes.com/metrica/hospital-vertical/hospital/hospital-index.html
+https://pixinvent.com/demo/vuesax-vuejs-admin-dashboard-template/demo-4/dashboard/analytics
+
+Line icons
+https://linearicons.com/free#cdn
+

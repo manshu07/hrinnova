@@ -1,5 +1,105 @@
 <div id="content-area">
  <div class="content-wrapper">
    <app-header></app-header>
+   <div class="content-anayltics">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-6 col-sm-8 col-xs-12">
+         <div class="con-card no-padding">
+           <div class="card-body no-padding">
+             <div class="row no-gutters">
+                <div class="col-sm-6 col-xs-12">
+                  <div class="card-header">
+                    <h3> Work Distribution</h3>
+                  </div>
+                  <div class="chart-area">
+                    <div id="chartContainer" style="height: 180px; width: 100%;"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <div class="dt-zone-stats">
+                    <div class="dt-zone-stats__content">
+                      <div class="h1 text-success">0</div>
+                      <span>Assigned Task</span>
+                    </div>
+                    <div class="dt-zone-stats__content">
+                      <div class="h1 text-danger">0</div>
+                      <span>Overdue Task</span>
+                    </div>
+                  </div>
+                </div>
+             </div>
+           </div>
+         </div>
+         </div>
+         <div class="col-md-6 col-sm-8 col-xs-12">
+           <!-- Avg Hours -->
+           <div class="con-card">
+              <div class="card-body">
+                <span class="badge badge-secondary badge-top-right">Hours for this month</span>
+                <div class="card-details">
+                  <i class="icon lnr lnr-clock"></i>
+                  <div class="media-body">
+                    <ul class="hours-list">
+                      <li class="hours-list__item">
+                        <span class="hours-number">08:45</span>
+                        <span class="dot-shape bg-success"></span>
+                        <span class="hours-label">Avg Net Hrs.</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">07:45</span>
+                        <span class="dot-shape bg-danger"></span>
+                        <span class="hours-label">Avg Timesheet Hrs.</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">128:45</span>
+                        <span class="dot-shape bg-default"></span>
+                        <span class="hours-label">Monthly Net Hrs.</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">08:45</span>
+                        <span class="hours-label">Total WOH Hrs.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <!-- Leave Showcase -->
+           <div class="con-card">
+             <div class="card-body">
+               <span class="badge badge-secondary badge-top-right">Leave Details</span>
+               <div class="card-details">
+                 <i class="icon lnr lnr-car"></i>
+                 <div class="media-body">
+                   <ul class="hours-list">
+                     <li class="hours-list__item">
+                       <span class="hours-number">0</span>
+                       <span class="dot-shape bg-success"></span>
+                       <span class="hours-label">Comp off</span>
+                     </li>
+                     <li class="hours-list__item">
+                       <span class="hours-number">02</span>
+                       <span class="dot-shape bg-danger"></span>
+                       <span class="hours-label">Paid Leave</span>
+                     </li>
+                     <li class="hours-list__item">
+                       <span class="hours-number">05</span>
+                       <span class="dot-shape bg-danger"></span>
+                       <span class="hours-label">Missed punch</span>
+                     </li>
+                     <li class="hours-list__item">
+                       <span class="hours-number">07</span>
+                       <span class="hours-label">Remaining Leaves</span>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
  </div>
 </div>
