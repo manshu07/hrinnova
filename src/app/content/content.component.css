@@ -25,12 +25,15 @@
 .con-card .card-header{
   background: transparent;
   border:none;
-  padding: 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .con-card .card-header h3{
   font-size: 18px;
   margin: 0;
-  padding: 20px;
+  padding: 0 20px;
 }
 .card-details{
   display: flex;
@@ -141,3 +144,78 @@
     border-bottom: 1px solid #ddd;
 }
 .chart-area{padding: 15px;}
+
+.card-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #212121;
+  }
+.card-action{
+  padding: 0 20px;
+}
+
+.card-action a{
+  display: inline-block;
+  font-size: 14px;  
+  color: #3e2280;
+  font-weight: 400;
+}
+.pd-t-b-20{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.pd-l-r-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.con-table {
+  background: #f8f8f8;
+  border: 2px solid #f8f8f8;
+  width: 100%;
+  overflow: auto;
+}
+.con-table table{
+  margin: 0;
+  position: relative;
+  font-size: 1rem;
+  border-collapse: collapse;
+  width: 100%
+}
+.con-table table tr {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    background: #fff;
+}
+.con-table table tr:first-child:not(.activeEdit):not(.tr-expandedx):not(.hoverFlat):hover{
+  transform: none;
+}
+
+.con-table table tr:not(.activeEdit):not(.tr-expandedx):not(.hoverFlat):hover {
+  z-index: 200;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.con-table table tr th {
+  padding: 14px 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #626262;
+  font-size: 14px;
+  font-weight: 600;
+  border:none;
+}
+
+.con-table table tr td{
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #626262;
+  font-weight: 300;
+  border:none;
+}

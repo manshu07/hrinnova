@@ -1,42 +1,42 @@
 <div id="content-area">
- <div class="content-wrapper">
-   <app-header></app-header>
-   <div class="content-anayltics">
-     <div class="container-fluid">
-       <div class="row">
-         <div class="col-md-6 col-sm-8 col-xs-12">
-         <div class="con-card no-padding">
-           <div class="card-body no-padding">
-             <div class="row no-gutters">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="card-header">
-                    <h3> Work Distribution</h3>
-                  </div>
-                  <div class="chart-area">
-                    <div id="chartContainer" style="height: 173px; width: 100%;"></div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div class="dt-zone-stats">
-                    <div class="dt-zone-stats__content">
-                      <div class="h1">0</div>
-                      <span>Assigned Task</span>
-                      <span class="dot-shape bg-success"></span>
+  <div class="content-wrapper">
+    <app-header></app-header>
+    <div class="content-anayltics">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <div class="con-card no-padding">
+              <div class="card-body no-padding">
+                <div class="row no-gutters">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="card-header">
+                      <h3 class="pd-t-b-20"> Work Distribution</h3>
                     </div>
-                    <div class="dt-zone-stats__content">
-                      <div class="h1">0</div>
-                      <span>Overdue Task</span>
-                      <span class="dot-shape bg-danger"></span>
+                    <div class="chart-area">
+                      <div id="chartContainer" style="height: 173px; width: 100%;"></div>
                     </div>
                   </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="dt-zone-stats">
+                      <div class="dt-zone-stats__content">
+                        <div class="h1">0</div>
+                        <span>Assigned Task</span>
+                        <span class="dot-shape bg-success"></span>
+                      </div>
+                      <div class="dt-zone-stats__content">
+                        <div class="h1">0</div>
+                        <span>Overdue Task</span>
+                        <span class="dot-shape bg-danger"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-             </div>
-           </div>
-         </div>
-         </div>
-         <div class="col-md-6 col-sm-8 col-xs-12">
-           <!-- Avg Hours -->
-           <div class="con-card">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-12">
+            <!-- Avg Hours -->
+            <div class="con-card">
               <div class="card-body">
                 <span class="badge badge-secondary badge-top-right">Hours for this month</span>
                 <div class="card-details">
@@ -66,54 +66,218 @@
                   </div>
                 </div>
               </div>
-           </div>
-           <!-- Leave Showcase -->
-           <div class="con-card">
-             <div class="card-body">
-               <span class="badge badge-secondary badge-top-right">Leave Details</span>
-               <div class="card-details">
-                 <i class="icon lnr lnr-car"></i>
-                 <div class="media-body">
-                   <ul class="hours-list">
-                     <li class="hours-list__item">
-                       <span class="hours-number">0</span>
-                       <span class="dot-shape bg-success"></span>
-                       <span class="hours-label">Comp off</span>
-                     </li>
-                     <li class="hours-list__item">
-                       <span class="hours-number">02</span>
-                       <span class="dot-shape bg-danger"></span>
-                       <span class="hours-label">Paid Leave</span>
-                     </li>
-                     <li class="hours-list__item">
-                       <span class="hours-number">05</span>
-                       <span class="dot-shape bg-danger"></span>
-                       <span class="hours-label">Missed punch</span>
-                     </li>
-                     <li class="hours-list__item">
-                       <span class="hours-number">07</span>
-                       <span class="hours-label">Remaining Leaves</span>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-      
-       <!--    Attendance & Project Timesheet Details -->
-       <div class="row">
-         <div class="col-sm-12">
-           <div class="con-card">
-             <div class="card-header">
-               <div class=""></div>
-               <h3>My Attendance & Project Timesheet Details - {{September-2019}}</h3>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+            </div>
+            <!-- Leave Showcase -->
+            <div class="con-card">
+              <div class="card-body">
+                <span class="badge badge-secondary badge-top-right">Leave Details</span>
+                <div class="card-details">
+                  <i class="icon lnr lnr-car"></i>
+                  <div class="media-body">
+                    <ul class="hours-list">
+                      <li class="hours-list__item">
+                        <span class="hours-number">0</span>
+                        <span class="dot-shape bg-success"></span>
+                        <span class="hours-label">Comp off</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">02</span>
+                        <span class="dot-shape bg-danger"></span>
+                        <span class="hours-label">Paid Leave</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">05</span>
+                        <span class="dot-shape bg-danger"></span>
+                        <span class="hours-label">Missed punch</span>
+                      </li>
+                      <li class="hours-list__item">
+                        <span class="hours-number">07</span>
+                        <span class="hours-label">Remaining Leaves</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--    Attendance & Project Timesheet Details -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="con-card pd-l-r-0" style="padding-bottom: 0;">
+              <div class="card-header" style="padding:20px 0;">
+                <div class="card-title">
+                  <h3>My Attendance & Project Timesheet Details - {{September-2019}}</h3>
+                </div>
+                <div class="card-action"><a href="#">Complete your Timesheet</a></div>
+              </div>
+              <div class="con-table table-responsive">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Hours</th>
+                        <th>Percentage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div>Current Month Attendance</div>
+                        </td>
+                        <td>
+                          <div>11.50</div>
+                        </td>
+                        <td>
+                          <div>&nbsp;</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Min. timesheet hours expected</div>
+                        </td>
+                        <td>
+                          <div>92.50</div>
+                        </td>
+                        <td>
+                          <div>&nbsp;</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Total Timesheet hours Logged</div>
+                        </td>
+                        <td>
+                          <div>89.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span class="dot-shape bg-danger"></span>
+                            <span> (Less By 3.00 Hours)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Efforts logged in No Work / Idle</div>
+                        </td>
+                        <td>
+                          <div>00.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span> (0%)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Efforts logged in Objective Base Self Learning</div>
+                        </td>
+                        <td>
+                          <div>00.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span> (0%)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Efforts logged in Taking Objective Based Training</div>
+                        </td>
+                        <td>
+                          <div>00.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span> (0%)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Efforts logged in Imparting Objective Based Training</div>
+                        </td>
+                        <td>
+                          <div>00.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span> (0%)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>Missing Efforts</div>
+                        </td>
+                        <td>
+                          <div>03.00</div>
+                        </td>
+                        <td>
+                          <div>
+                            <span> (3.26%)</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="con-card pd-l-r-0" style="padding-bottom: 0;">
+              <div class="card-header" style="padding:20px 0;">
+                <div class="card-title">
+                  <h3>My Project - {{September-2019}}</h3>
+                </div>
+              </div>
+              <div class="con-table table-responsive">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Project Manager </th>
+                        <th>Client-PIN-Project</th>
+                        <th>Efforts Logged</th>
+                        <th>Do you have visibility for next month work allocation?</th>
+                        <th>% Allocation in next month as per your understanding</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div>Pooja K Kansara</div>
+                        </td>
+                        <td>
+                          <div>Bloom Tools-James Greig-TM2879BHD01-Bluehype Designing</div>
+                        </td>
+                        <td>
+                          <div>88.00</div>
+                        </td>
+                        <td>
+                          <input type="checkbox">
+                        </td>
+                        <td>
+                          <label for="hero" name="name"></label>
+                          <input type="text">
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
