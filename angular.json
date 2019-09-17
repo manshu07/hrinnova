@@ -6,8 +6,8 @@
     "admin-theme": {
       "projectType": "application",
       "schematics": {},
-      "root": "libs/my-lib",
-      "sourceRoot": "libs/my-lib/src",
+      "root": "",
+      "sourceRoot": "",
       "prefix": "app",
       "architect": {
         "build": {
